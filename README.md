@@ -83,8 +83,8 @@ that tho the synthetic T1 (from the T2 + T1 using synthSR hyperfine) should cove
 T1 and T2, and is in fact as described above been resampled to the same dimensions as the T1 that is going
 to be filled. The number of voxels is not the same, but the size of the brain and overall structures is,
 it is like the resampling adds some extra voxels, at the end of one or more of the axes, of nothing, so
-that needs to be trimmed for the filling to make sense. It will always trim a T1w scan with an acqui-
-sition label as "ds" which only happens as an output of the previous command.
+that needs to be trimmed for the filling to make sense. It will always trim a T1w scan with an acquisition
+label as "ds" which only happens as an output of the previous command.
 ``` 
 singularity run --bind /directory/to/bind singularity-image_crop-fill.sif folder/with/BIDS/format
 --participant_label <sub-label> --mri_crop_step trim --acquisition_label <acq-label>
